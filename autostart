@@ -1,0 +1,16 @@
+#!/bin/sh
+
+export OOO_FORCE_DESKTOP=gnome
+
+# Wallpaper
+hsetroot -fill \
+	~/Pictures/Wallpapers/JJB_5334_NASA-LADEE-Launch-sept2013-APOD-1000pxJB.jpg
+
+# Composite manager
+#xcompmgr -c -t-5 -l-5 -r4.2 -o.55 -f -C &
+compton -bcCGf --backend glx &
+
+#fbpanel &
+#wmdocker &
+tint2 -c ~/.config/tint2/tint2rc &
+volti &
